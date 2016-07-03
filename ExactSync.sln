@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExactSyncConsole", "ExactSyncConsole\ExactSyncConsole.csproj", "{C28EEB0D-52FD-4687-B246-5BF43F990374}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLib", "CommonLib\CommonLib.csproj", "{1F58FD6D-9924-41B8-83F4-DB9569B1D21D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTransferFactory", "FileTransferFactory\FileTransferFactory.csproj", "{82787DE6-774F-497D-96DF-6D194F3E36DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExactAdapter", "D:\exactonline-api-dotnet-client-master\src\ConsoleApplication\ExactAdapter.csproj", "{1BCFE70C-8B33-4FD2-9BBE-A7BD076282A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropboxAdapter", "DropboxAdapter\DropboxAdapter.csproj", "{33A16535-A722-4679-BD9F-A78576988519}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C28EEB0D-52FD-4687-B246-5BF43F990374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C28EEB0D-52FD-4687-B246-5BF43F990374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C28EEB0D-52FD-4687-B246-5BF43F990374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C28EEB0D-52FD-4687-B246-5BF43F990374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F58FD6D-9924-41B8-83F4-DB9569B1D21D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F58FD6D-9924-41B8-83F4-DB9569B1D21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F58FD6D-9924-41B8-83F4-DB9569B1D21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F58FD6D-9924-41B8-83F4-DB9569B1D21D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82787DE6-774F-497D-96DF-6D194F3E36DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82787DE6-774F-497D-96DF-6D194F3E36DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82787DE6-774F-497D-96DF-6D194F3E36DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82787DE6-774F-497D-96DF-6D194F3E36DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BCFE70C-8B33-4FD2-9BBE-A7BD076282A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BCFE70C-8B33-4FD2-9BBE-A7BD076282A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BCFE70C-8B33-4FD2-9BBE-A7BD076282A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BCFE70C-8B33-4FD2-9BBE-A7BD076282A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33A16535-A722-4679-BD9F-A78576988519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33A16535-A722-4679-BD9F-A78576988519}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33A16535-A722-4679-BD9F-A78576988519}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33A16535-A722-4679-BD9F-A78576988519}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
