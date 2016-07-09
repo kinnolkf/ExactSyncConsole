@@ -47,8 +47,6 @@ namespace ExactSyncConsole
                     && x.Value > lastSyncDateTime);
                 if (latestFilelist?.Count() > 0)
                 {
-
-                    (new FileInfo(downloadPath)).Directory.Create();
                     foreach (var file in latestFilelist.ToList())
                     {
                         if (downloader.DownloadFile(file.Key, (new FileInfo(downloadPath)).Directory.ToString()))

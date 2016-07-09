@@ -21,9 +21,11 @@ namespace ExactSyncConsole
             TextWriter oldOut = Console.Out;
             try
             {
-                ostrm = new FileStream(Path.Combine(
+                var downloadPath = Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData)
-            , "ExactSync" ,"Log.txt"), FileMode.OpenOrCreate, FileAccess.Write);
+            , "ExactSync", "Log.txt");
+                (new FileInfo(downloadPath)).Directory.Create();
+                ostrm = new FileStream(downloadPath, FileMode.OpenOrCreate, FileAccess.Write);
                 writer = new StreamWriter(ostrm);
             }
             catch (Exception e)
