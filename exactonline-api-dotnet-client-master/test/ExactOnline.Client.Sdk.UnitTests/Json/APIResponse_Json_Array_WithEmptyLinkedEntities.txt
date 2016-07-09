@@ -1,0 +1,11 @@
+﻿{
+    "d": {
+        "results": [
+            {
+                "BankAccounts": {
+                    "results": []
+                }
+            }
+        ]
+    }
+}

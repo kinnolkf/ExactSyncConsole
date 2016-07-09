@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExactAdapter2
+namespace ExactAdapter
 {
     public class ExactUploader : Iuploader
     {
@@ -17,8 +17,9 @@ namespace ExactAdapter2
         public ExactUploader()
         {
             InitializeUploader();
+            //Client = client as ExactOnlineClient;
         }
-        private ExactOnlineClient currentClient;
+        private ExactOnlineClient _client;
         private void InitializeUploader()
         {
             // These are the authorisation properties of your app.
@@ -30,11 +31,11 @@ namespace ExactAdapter2
             var callbackUrl = new Uri("https://www.mycompany.com/myapplication");
 
             var connector = new Connector(clientId, clientSecret, callbackUrl);
-            currentClient = new ExactOnlineClient(connector.EndPoint, connector.GetAccessToken);
+            _client = new ExactOnlineClient(connector.EndPoint, connector.GetAccessToken);
 
             // Get the Code and Name of a random account in the administration
             var fields = new[] { "Code", "Name" };
-            var account = currentClient.For<Account>().Top(1).Select(fields).Get().FirstOrDefault();
+            var account = _client.For<Account>().Top(1).Select(fields).Get().FirstOrDefault();
 
             Console.WriteLine("Account {0} - {1}", account.Code.TrimStart(), account.Name);
         }
@@ -59,12 +60,12 @@ namespace ExactAdapter2
                     {
                         Subject = Path.GetFileName(fullFileName),
                         Body = sb.ToString(),
-                        Category = GetCategoryId(currentClient),
+                        Category = GetCategoryId(_client),
                         Type = 55, //Miscellaneous
                         DocumentDate = DateTime.Now.Date
                     };
 
-                    var created = currentClient.For<Document>().Insert(ref document);
+                    var created = _client.For<Document>().Insert(ref document);
                     if (created)
                     {
                         _documentId = document.ID;
@@ -152,5 +153,17 @@ namespace ExactAdapter2
                 return isText;
             }
         }
+
+        public Dictionary<string, DateTime> UpdateUploadedFile(string fileName, DateTime uploadedDate)
+        {
+            if (!_uploadedFiles.ContainsKey(fileName))
+                _uploadedFiles.Add(fileName, uploadedDate);
+            else
+                _uploadedFiles[fileName] = uploadedDate;
+
+            return _uploadedFiles;
+        }
+
+        private Dictionary<string, DateTime> _uploadedFiles = new Dictionary<string, DateTime>();
     }
 }

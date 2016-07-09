@@ -1,0 +1,14 @@
+﻿{
+  "Currency": "EUR",
+  "Description": "NewInvoiceForEntityWithCollection",
+  "InvoiceTo": "3734121e-1544-4b77-9ae2-7203e9bd6046",
+  "Journal": "50",
+  "OrderDate": "2012-10-26T00:00:00",
+  "OrderedBy": "3734121e-1544-4b77-9ae2-7203e9bd6046",
+  "Lines": [
+    {
+      "Description": "NewInvoiceForEntityWithCollection",
+      "Item": "4f68481a-7a2c-4fbc-a3a0-0c494df3fa0d"
+    }
+  ]
+}

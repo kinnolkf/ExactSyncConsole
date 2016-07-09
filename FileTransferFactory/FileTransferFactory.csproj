@@ -62,8 +62,8 @@
       <Project>{33a16535-a722-4679-bd9f-a78576988519}</Project>
       <Name>DropboxAdapter</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\exactonline-api-dotnet-client-master\src\ConsoleApplication\ExactAdapter.csproj">
-      <Project>{1bcfe70c-8b33-4fd2-9bbe-a7bd076282a8}</Project>
+    <ProjectReference Include="..\ExactAdapter\ExactAdapter.csproj">
+      <Project>{0bc58fd3-6204-498b-95b3-5396e297ebea}</Project>
       <Name>ExactAdapter</Name>
     </ProjectReference>
   </ItemGroup>

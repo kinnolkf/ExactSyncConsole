@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ExactAdapter2")]
+[assembly: AssemblyTitle("ExactAdapter")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ExactAdapter2")]
+[assembly: AssemblyProduct("ExactAdapter")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("71ab1ffd-d11f-4fa5-afe8-0a1f380313f7")]
+[assembly: Guid("0bc58fd3-6204-498b-95b3-5396e297ebea")]
 
 // Version information for an assembly consists of the following four values:
 //

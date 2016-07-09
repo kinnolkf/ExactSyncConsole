@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+	<metadata>
+		<id>ExactOnline.Client.Sdk</id>
+		<version>1.0.0</version>
+		<title>Exact Online Client SDK</title>
+		<authors>Exact</authors>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>The Exact Online Client SDK provides a rich application framework and simplifies the interconnection with the Exact Online RESTful API</description>
+		<iconUrl>https://avatars0.githubusercontent.com/u/4112611?v=3&amp;s=200</iconUrl>
+		<projectUrl>https://github.com/exactonline/ClientSDK</projectUrl>
+		<licenseUrl>https://raw.githubusercontent.com/exactonline/ClientSDK/master/LICENSE.txt</licenseUrl>
+		<copyright>Exact</copyright>
+		<tags>Exact Online Client SDK</tags>
+		<dependencies>
+			<group targetFramework=".NETFramework4.5">
+				<dependency id="Newtonsoft.Json" version="6.0.1" />
+			</group>
+		</dependencies>
+		<references>
+			<group targetFramework=".NETFramework4.5">
+				<reference file="ExactOnline.Client.Models.dll" />
+				<reference file="ExactOnline.Client.Sdk.dll" />
+			</group>
+		</references>
+	</metadata>
+	<files>
+		<file src="bin\Release\ExactOnline.Client.Models.dll" target="lib\net45\ExactOnline.Client.Models.dll" />
+		<file src="bin\Release\ExactOnline.Client.Sdk.dll" target="lib\net45\ExactOnline.Client.Sdk.dll" />
+	</files>
+</package>
