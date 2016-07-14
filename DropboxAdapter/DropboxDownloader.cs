@@ -25,7 +25,7 @@ namespace DropboxAdapter
         {
                 DropboxCertHelper.InitializeCertPinning();
 
-                var accessToken = "YNdrnpESG-AAAAAAAAAAEjw98X4Ew5XZKC0I1TEITJD3oLHG556emPRK3Or0s6Bu";
+                var accessToken = "";
                 if (string.IsNullOrEmpty(accessToken))
                 {
                 Console.WriteLine("Unable to get AcessToken from " + "DropboxDownloader");
